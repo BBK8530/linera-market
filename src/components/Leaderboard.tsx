@@ -723,7 +723,7 @@ const Leaderboard = () => {
             </tr>
           </thead>
           <tbody>
-            {currentItems?.map((entry: LeaderboardEntry, index: number) => {
+            {currentItems?.map((entry: LeaderboardEntry) => {
               const rank =
                 rankingView === "total"
                   ? entry.totalRank
