@@ -6,7 +6,7 @@ const API_ENDPOINT =
 // 配置 R2 客户端（S3 兼容模式）
 const r2Client = new S3Client({
   region: "auto",
-  endpoint: `https://${process.env.CLOUDFLARE_ACCOUNT_ID}.cloudflarestorage.com/linera-market-reports`,
+  endpoint: `https://${process.env.CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com`,
   credentials: {
     accessKeyId: process.env.R2_ACCESS_KEY_ID,
     secretAccessKey: process.env.R2_SECRET_ACCESS_KEY,
